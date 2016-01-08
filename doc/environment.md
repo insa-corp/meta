@@ -137,7 +137,7 @@ Required by `nativescript` to build Android applications.
 
 ### Installation
 
-[Download link](developer.android.com/sdk/index.html)
+[Download link](http://developer.android.com/sdk/index.html)
 
 (SDK Tools Only)
 
