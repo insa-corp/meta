@@ -47,7 +47,38 @@ __Explanation__: Indentation might lead to numerous debates but we have to settl
  between any software (terminal, editor, browser, etc.): even if tabs are cool, spaces are the solution mostly used by
  collaborative projects.
 
+### Braces
+
+__Rule__: Use K&R style
+
+__DO__:
+
+````typescript
+if (condition) {  // no spaces inside parentheses
+  ...  // 2 space indent.
+} else if (...) {  // Braces are one the same line as the statement
+  ...
+} else { // The else goes on the same line as the closing brace.
+  ...
+}
+````
+
+````scss
+body {
+  color: red;
+}
+````
+
+__Explanation__: Style of 99.9% projects.
+
 ## Documentation
 
+## References
 
+### Projects
 
+ * [Express](https://github.com/expressjs/express/tree/master)
+ * [Lodash](https://github.com/lodash/lodash)
+ * [Bluebird](https://github.com/petkaantonov/bluebird)
+
+### Documents
