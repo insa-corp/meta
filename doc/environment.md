@@ -4,11 +4,11 @@ Here is a small tutorial to set up the full environment required to develop on o
 
 Cross-platform:
 
- * Git
- * Node.js (4.x)
- * npm (2.x)
+ * [Git](#git)
+ * [Node.js (4.x)](#nodejs)
+ * [npm (2.x)](#npm)
  * python (2.7)
- * MongoDB (3.x) _(optionnal)_
+ * [MongoDB (3.x) _(optionnal)_](#mongodb)
  * ruby (2.x) _(optionnal)_
 
 Windows:
