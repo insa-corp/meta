@@ -10,6 +10,7 @@ Cross-platform:
  * python (2.7)
  * [MongoDB (3.x) _(optionnal)_](#mongodb)
  * ruby (2.x) _(optionnal)_
+ * [Sass](#sass)
 
 Windows:
 
@@ -119,6 +120,16 @@ Document oriented DB.
 
 [Download link](https://www.mongodb.org/)
 
+## Sass
+
+Modern language for stylesheets: powerful syntax and stylesheet imports from third party.
+
+### Installation
+
+This does require ruby-dev.
+
+[Official website](http://sass-lang.com/install)
+
 ## Java SDK
 
 ### Description
@@ -156,4 +167,3 @@ Create new Android Virtual Device.
 ## IDE
 
 All our projects are IDE-agnostic but we do recommend [WebStorm](https://www.jetbrains.com/webstorm/) (note that students can obtain a free key) or [Atom](https://atom.io/).
-
