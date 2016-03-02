@@ -9,7 +9,7 @@ Cross-platform:
  * [npm (2.x)](#npm)
  * python (2.7)
  * [MongoDB (3.x) _(optionnal)_](#mongodb)
- * ruby (2.x) _(optionnal)_
+ * [Ruby (2.x)](#ruby)
  * [Sass](#sass)
 
 Windows:
@@ -120,15 +120,55 @@ Document oriented DB.
 
 [Download link](https://www.mongodb.org/)
 
+## Ruby
+
+Install the ruby langage compiler. It is required for Sass.
+
+### Installation
+
+
+### Windows 
+
+Download the installer for the latest version (currently 2.2.4 or 2.2.4 (x64)) from the [Ruby Installer project](http://rubyinstaller.org/downloads/).
+
+Run it as administrator.
+
+You can change the location to not use the root of your computer (ie. `C:\Program Files\Ruby22`). Make sure to check `Add Ruby executable to your PATH`. Optionnaly, associate files.
+
+__Warning__: It seems that the current version of Ruby's `gem` has a small issue when the location contains spaces. A ticket is openned for this issue on Github but there is a quick workaround if you are stuck. ([see Sass](#sass))
+
+### Check installation
+
+````bash
+$ ruby --version
+$ gem --version
+````
+
 ## Sass
 
 Modern language for stylesheets: powerful syntax and stylesheet imports from third party.
 
 ### Installation
 
-This does require ruby-dev.
+Make sure you have Ruby (with Gem), then simple execute `$ gem install sass`. (You may have to start a terminal with administrator privileges).
 
-[Official website](http://sass-lang.com/install)
+__Fixing__ the script if there spaces in the path of your Ruby directory:
+
+Edit the file `RUBY_HOME $ bin/sass.bat` by removing the superfluous double quotes. Here is what you should get:
+````bat
+@ECHO OFF
+IF NOT "%~f0" == "~f0" GOTO :WinNT
+@"C:\Program Files\Ruby22\bin\ruby.exe" "C:/Program Files/Ruby22/bin/sass" %1 %2 %3 %4 %5 %6 %7 %8 %9
+GOTO :EOF
+:WinNT
+@"C:\Program Files\Ruby22\bin\ruby.exe" "%~dpn0" %*
+````
+
+### Check installation
+
+````bash
+$ sass --version
+````
 
 ## Java SDK
 
