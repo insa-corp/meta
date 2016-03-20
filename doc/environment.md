@@ -203,7 +203,3 @@ android-home $ tools/android avd
 ````
 
 Create new Android Virtual Device.
-
-## IDE
-
-All our projects are IDE-agnostic but we do recommend [WebStorm](https://www.jetbrains.com/webstorm/) (note that students can obtain a free key) or [Atom](https://atom.io/).
